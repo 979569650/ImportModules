@@ -8,8 +8,8 @@ public class PackagePostProcessor : AssetPostprocessor
     {
         // 定义需要复制的文件夹路径（相对于包的根目录）
         string[] foldersToCopy = {
-            "Packages/importmodules/Export",
-            "Packages/importmodules/Resource"
+            "Packages/com.epoint.importmodules/Export",
+            "Packages/com.epoint.importmodules/Resource"
         };
 
         // 遍历所有导入的资源
@@ -21,7 +21,7 @@ public class PackagePostProcessor : AssetPostprocessor
                 if (assetPath.StartsWith(folderPath))
                 {
                     // 计算目标路径（将 Packages 替换为 Assets）
-                    string destinationPath = assetPath.Replace("Packages/importmodules/", "Assets/importmodules/");
+                    string destinationPath = assetPath.Replace("Packages/com.epoint.importmodules/", "Assets/");
 
                     // 确保目标目录存在
                     string destinationDir = Path.GetDirectoryName(destinationPath);
