@@ -1,6 +1,6 @@
 {
     "name": "com.epoint.importmodules",
-    "version": "1.0.0",
+    "version": "1.0.3",
     "displayName": "Importmodules",
     "description": "Importmodules",
     "dependencies": {
