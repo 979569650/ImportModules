@@ -21,7 +21,7 @@ public class PackagePostProcessor : AssetPostprocessor
                 if (assetPath.StartsWith(folderPath))
                 {
                     // 计算目标路径（将 Packages 替换为 Assets）
-                    string destinationPath = assetPath.Replace("Packages/com.epoint.importmodules/", "Assets/ImportModules");
+                    string destinationPath = assetPath.Replace("Packages/com.epoint.importmodules/", "Assets/ImportModules/");
 
                     // 确保目标目录存在
                     string destinationDir = Path.GetDirectoryName(destinationPath);
